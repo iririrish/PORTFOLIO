@@ -316,7 +316,7 @@ $('#cf').onsubmit=e=>{e.preventDefault();const n=$('#fn').value.trim(),m=$('#fe'
 // resume (built from page content when no PDF is set)
 $('#resume').innerHTML=`<h1>${E(D.name)}</h1><div>${E(D.title)}${D.email?' · '+E(D.email):''}${D.linkedin?' · '+E(D.linkedin):''}</div><h2>Education</h2><p><b>${E(D.program)}</b>, ${E(D.university)} (${E(D.period)})</p><h2>Experience</h2>${D.experience.map(x=>`<p><b>${E(x.role)}</b>, ${E(x.org)} (${E(x.period)})</p><p>${E(x.summary)}</p>${ul(x.areas.map(a=>a[0]))}`).join('')}<h2>Leadership</h2>${D.leadership.map(l=>`<p><b>${E(l.role)}</b>, ${E(l.org)} (${E(l.when)})</p>`).join('')}<h2>Skills</h2>${sk.map(s=>`<p><b>${E(s.cat)}:</b> ${E(s.items.join(', '))}</p>`).join('')}`;
 document.addEventListener('click',e=>{if(e.target.closest('[data-print]'))window.print()});
-// theme
+// theme 
 const root=document.documentElement,sun='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4 12H2m20 0h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg>',moon='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 13A9 9 0 1111 3a7 7 0 0010 10z"/></svg>';
 const dark=()=>root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches,paint=()=>$('#theme').innerHTML=dark()?sun:moon;
 try{const t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}paint();
