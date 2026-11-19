@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Irish U. Mercado — Personal Engineering Portfolio | Aerospace Engineering Student</title>
+<meta name="description" content="Portfolio of Irish U. Mercado, Aerospace Engineering student in the Philippines: CAD and SolidWorks tooling design, aerodynamics, Python engineering software, PCB design and leadership.">
+<meta property="og:title" content="Irish U. Mercado — Personal Engineering Portfolio">
+<meta property="og:description" content="Aerospace Engineering student: CAD, aerodynamics, engineering software and fabrication projects.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b1220">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <a class="brand" href="#home">I.U. MERCADO<span>/ AERO</span></a>
+  <nav aria-label="Primary"><ul id="navlinks">
+    <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#cad">CAD</a></li><li><a href="#experience">Experience</a></li><li><a href="#achievements">Awards</a></li><li><a href="#leadership">Leadership</a></li><li><a href="#certs">Training</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav>
+  <button class="icon" id="theme" aria-label="Toggle light/dark theme">◐</button>
+</header>
+<main id="main">
+<section id="home" class="hero grid-bg">
+  <div class="wrap hero-in">
+    <div>
+      <p class="mono tag">PHILIPPINES · 14°N 121°E</p>
+      <h1>Irish U. Mercado</h1>
+      <p class="role">Aerospace Engineering Student</p>
+      <p class="lead">I work on aerodynamics, CAD and engineering design, and I build small software tools to analyze and automate technical work — from nanosatellite drag modeling to aircraft maintenance tooling in SolidWorks.</p>
+      <div class="btns"><a class="btn primary" href="#projects">View Projects</a><a class="btn" id="resume" href="assets/pdf/resume.pdf" download>Download Resume</a><a class="btn" href="#contact">Contact Me</a></div>
+    </div>
+    <div class="side">
+      <div class="photo" role="img" aria-label="Profile photograph placeholder"><span class="mono">PROFILE PHOTO<br>assets/images/profile.jpg</span></div>
+      <svg class="bp" viewBox="0 0 320 200" role="img" aria-label="Decorative aircraft planform drawing"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M160 14c6 0 9 10 9 26v46l118 44v14l-118-18v38l28 18v10l-37-9-37 9v-10l28-18v-38L33 144v-14l118-44V40c0-16 3-26 9-26z"/><path d="M160 6v188M10 100h300" stroke-dasharray="4 4" opacity=".5"/><circle cx="160" cy="100" r="46" opacity=".35"/></g><text x="8" y="192" class="mono" font-size="8" fill="currentColor">PLANFORM · DECORATIVE ILLUSTRATION</text></svg>
+    </div>
+  </div>
+</section>
+
+<section id="about"><div class="wrap">
+  <header class="sh"><span class="mono">01</span><h2>About</h2></header>
+  <div class="two">
+    <div id="aboutText"></div>
+    <dl class="facts" id="facts"></dl>
+  </div>
+</div></section>
+
+<section id="skills" class="alt"><div class="wrap">
+  <header class="sh"><span class="mono">02</span><h2>Technical Skills</h2></header>
+  <div class="skills" id="skillGrid"></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <header class="sh"><span class="mono">03</span><h2>Featured Projects</h2></header>
+  <div class="chips" id="projFilter" role="group" aria-label="Filter projects"></div>
+  <div id="projList"></div>
+</div></section>
+
+<section id="cad" class="alt"><div class="wrap">
+  <header class="sh"><span class="mono">04</span><h2>CAD, Mechanical Design &amp; Fabrication</h2></header>
+  <p class="note">Lufthansa Technik Philippines entries are tasks performed during on-the-job training. Only approved or sanitized screenshots are shown; no confidential drawings or proprietary dimensions.</p>
+  <h3 class="sub">C.1 · Professional OJT — Aircraft Maintenance Tooling &amp; Equipment</h3>
+  <div id="cadOjt"></div>
+  <h3 class="sub">C.2 · Other CAD Assignments (Academic / Personal)</h3>
+  <div id="cadOther" class="cad-large"></div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <header class="sh"><span class="mono">05</span><h2>Engineering Experience</h2></header>
+  <div id="exp"></div>
+</div></section>
+
+<section id="achievements" class="alt"><div class="wrap">
+  <header class="sh"><span class="mono">06</span><h2>Achievements &amp; Competitions</h2></header>
+  <ol class="timeline" id="ach"></ol>
+</div></section>
+
+<section id="leadership"><div class="wrap">
+  <header class="sh"><span class="mono">07</span><h2>Leadership &amp; Organizations</h2></header>
+  <div id="lead" class="lead-grid"></div>
+</div></section>
+
+<section id="certs" class="alt"><div class="wrap">
+  <header class="sh"><span class="mono">08</span><h2>Certifications &amp; Training</h2></header>
+  <ul class="certs" id="certList"></ul>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <header class="sh"><span class="mono">09</span><h2>Contact</h2></header>
+  <div class="two">
+    <div>
+      <p class="lead">Open to internships and engineering opportunities. Send a message or reach out directly.</p>
+      <ul class="links" id="contactLinks"></ul>
+    </div>
+    <form id="form" class="form">
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Message<textarea name="msg" rows="5" required></textarea></label>
+      <button class="btn primary" type="submit">Send via email app</button>
+      <p class="note" id="formNote" role="status"></p>
+    </form>
+  </div>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap"><span>© <span id="yr"></span> Irish U. Mercado · Personal Engineering Portfolio</span><span class="mono">Philippines</span></div></footer>
+<button class="icon top" id="toTop" aria-label="Back to top" hidden>↑</button>
+
+<dialog id="dlg" aria-labelledby="dTitle"><div class="dhead"><div><p class="mono tag" id="dCat"></p><h2 id="dTitle"></h2></div><button class="icon" id="dClose" aria-label="Close details">✕</button></div><div id="dBody"></div></dialog>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
